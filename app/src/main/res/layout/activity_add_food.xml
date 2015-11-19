@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.map.project.AddFood">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#3DC1CD"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Food "
+            android:id="@+id/textView8"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:textSize="40dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:background="#3DC1CD"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill out the fields below:"
+        android:id="@+id/addText"
+        android:textSize="23dp"
+        android:textColor="#3DC1CD"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/mealName"
+        android:layout_marginTop="20dp"
+        android:text="name of the meal"
+        android:textColor="#ff8e8e8e"
+        android:background="#ffffffff"
+        android:layout_below="@+id/addText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/quantity"
+        android:text="quantity"
+        android:textColor="#ff8e8e8e"
+        android:background="#ffffffff"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/mealName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/date"
+        android:layout_marginTop="27dp"
+        android:text="date"
+        android:layout_below="@+id/quantity"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff8e8e8e"
+        android:background="#ffffffff" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/duration"
+        android:layout_marginTop="27dp"
+        android:text="duration of validity"
+        android:layout_below="@+id/date"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff8e8e8e"
+        android:background="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/location"
+        android:layout_marginTop="27dp"
+        android:text="location"
+        android:layout_below="@+id/duration"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff8e8e8e"
+        android:background="#ffffffff" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/description"
+        android:layout_marginTop="27dp"
+        android:text="description"
+        android:layout_below="@+id/location"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff8e8e8e"
+        android:background="#ffffffff" />
+
+    <Button
+        android:id="@+id/addB"
+
+        android:text="Add"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:layout_below="@+id/description"
+        android:layout_alignRight="@+id/addText"
+        android:layout_alignEnd="@+id/addText"
+        android:layout_marginTop="23dp" />
+
+    </RelativeLayout>
